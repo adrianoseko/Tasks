@@ -1,7 +1,7 @@
-Django
-djangorestframework
+Django==3.2
+djangorestframework==3.12
 django-celery
-celery
-pika
+celery==5.0.5
+pika==1.2.0
 mysqlclient
 django-cors-headers
