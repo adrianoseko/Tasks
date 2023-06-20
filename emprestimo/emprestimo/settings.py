@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-&g15coyjhs&ubrta&+6fwkyh4ue+7(6=9rc&25a!5kf^+$o_r6
 DEBUG = True
 
 ALLOWED_HOSTS =  [
-    '*'
+    '*',
     'localhost',
     'http://127.0.0.1',
     'http://127.0.0.1:8000',
@@ -91,6 +91,10 @@ WSGI_APPLICATION = 'emprestimo.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'sqlite3.db'
+    },
     'futebol_profissional': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ebdb',
@@ -99,7 +103,7 @@ DATABASES = {
         'HOST': '172.20.3.58',
         'PORT': '3306'
     }
-}
+   }
 
 
 # Password validation
