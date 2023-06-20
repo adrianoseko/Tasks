@@ -20,7 +20,7 @@ class PropostasListView(ListCreateAPIView):
 
     def send_to_queue(self, proposal):
         print(proposal)
-        connection = pika.BlockingConnection(pika.ConnectionParameters('127.0.0.1'))
+        connection = pika.BlockingConnection(pika.ConnectionParameters('172.20.3.79'))
         channel = connection.channel()
         channel.queue_declare(queue='proposals')
         channel.basic_publish(exchange='', routing_key='proposals', body=str(proposal.id))
