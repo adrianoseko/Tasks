@@ -97,7 +97,7 @@ DATABASES = {
     },
     'futebol_profissional': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ebdb',
+        'NAME': 'DBTeste',
         'USER': 'root',
         'PASSWORD': 'SCCP@mysql1910#',
         'HOST': '172.20.3.58',
