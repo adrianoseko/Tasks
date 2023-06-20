@@ -90,16 +90,20 @@ WSGI_APPLICATION = 'emprestimo.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dbSCCP',
-        'USER': 'sccp_db',
-        'USERNAME': 'sccp_db',
-        'PASSWORD': 'Z&BZIR0VmjJm',
-        'HOST': '172.20.3.79',
-        'PORT': '5432'
-   }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'sqlite3.db'
+    },
+    'futebol_profissional': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ebdb',
+        'USER': 'root',
+        'PASSWORD': 'SCCP@mysql1910#',
+        'HOST': '172.20.3.58',
+        'PORT': '3306'
+    }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
