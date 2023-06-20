@@ -1,5 +1,7 @@
-Django==3.2
-djangorestframework==3.12
-django-celery==1.0.1
-celery==5.0.5
-pika==1.2.0
+Django
+djangorestframework
+django-celery
+celery
+pika
+mysqlclient
+django-cors-headers
