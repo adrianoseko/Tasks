@@ -5,3 +5,4 @@ celery==5.0.5
 pika==1.2.0
 mysqlclient
 django-cors-headers
+django-celery-results
