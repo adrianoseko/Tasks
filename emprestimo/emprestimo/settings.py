@@ -91,13 +91,13 @@ WSGI_APPLICATION = 'emprestimo.wsgi.application'
 
 DATABASES = {
    'default': {
-       'ENGINE': 'django.db.backends.postgresql_psycopg2',
-       'NAME': 'DBTeste',
-       'USER': 'postgres',
-       'USERNAME': 'postgres',
-       'PASSWORD': 'postgre',
-       'HOST': 'localhost',
-       'PORT': '5432'
+       'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dbSCCP',
+        'USER': 'sccp_db',
+        'USERNAME': 'sccp_db',
+        'PASSWORD': 'Z&BZIR0VmjJm',
+        'HOST': '172.20.3.79',
+        'PORT': '5432'
    }
 }
 
