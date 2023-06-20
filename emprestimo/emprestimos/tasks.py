@@ -11,3 +11,5 @@ def evaluate_proposal(propostas_id):
     else:
         propostas.status = 'Negada'
     propostas.save()
+
+
